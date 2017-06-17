@@ -1,0 +1,1 @@
+.nav{  background: #FFFFFF;  width: 100%;    &--main{    position: absolute;    top: 0;    right: 0;        &:after {      content: ' ';      visibility: hidden;      display: block;      clear: both;    }      }}
