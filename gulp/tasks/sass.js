@@ -1,0 +1,1 @@
+const gulp = require ("gulp"),    sass = require("gulp-sass"),    prefix = require("autoprefixer"),    postcss = require("gulp-postcss");gulp.task("styles", function(){   return gulp.src("./app/assets/scss/index.scss")       .pipe(sass().on("error", sass.logError))       .pipe(postcss([prefix]))       .pipe(gulp.dest("./app/assets/styles/"))});
