@@ -1,1 +1,1 @@
-.btn {    &--default {    border: 1px solid $c-main;    margin-top: auto;    margin-bottom: auto;    padding: 0.7375rem  3.75rem;    border-radius: 25px;   }}
+.btn {    &--default {    @include btn-default;  }    &--contact{        border: 0;    box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);    @include transition;  }}
