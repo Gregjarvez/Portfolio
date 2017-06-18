@@ -1,0 +1,1 @@
+.border-bottom-isActive{  border-bottom: none;    @include after800px{    border-bottom: 4px solid $c-main;  }}
