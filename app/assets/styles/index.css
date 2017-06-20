@@ -394,6 +394,9 @@ header {
   margin: 0;
   padding: 0; }
 
+#home .section-padding {
+  padding: 0rem 0 2.38rem 0; }
+
 .wrapper {
   max-width: 1200px;
   padding: 0;
@@ -402,7 +405,10 @@ header {
 
 .page-section {
   background: #FAFAFA;
-  padding: 4.38rem 0 4.38rem 0; }
+  padding: 3.38rem 0 3.38rem 0; }
+  @media only screen and (min-width: 560px) {
+    .page-section {
+      padding: 4.38rem 0 4.38rem 0; } }
 
 .l-float-right {
   float: right; }
@@ -595,42 +601,72 @@ header {
       .hero--i {
         width: 100%;
         position: absolute;
-        top: 12%;
+        top: 21%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%) scale(0.8);
                 transform: translate(-50%, -50%) scale(0.8);
         z-index: 2; } }
+    @media only screen and (min-width: 360px) {
+      .hero--i {
+        top: 20%; } }
     @media only screen and (min-width: 480px) {
       .hero--i {
         width: 600px;
         position: absolute;
-        top: 15%;
+        top: 25%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%) scale(0.8);
                 transform: translate(-50%, -50%) scale(0.8);
         z-index: 2; } }
+    @media only screen and (min-width: 600px) {
+      .hero--i {
+        top: 20%; } }
+    @media only screen and (min-width: 640px) {
+      .hero--i {
+        top: 60%; } }
+    @media only screen and (min-width: 645px) {
+      .hero--i {
+        top: 20%; } }
     @media only screen and (min-width: 690px) {
       .hero--i {
         width: 100%;
         padding: 2rem;
         -webkit-transform: translate(-50%, -50%) scale(1);
                 transform: translate(-50%, -50%) scale(1);
+        top: 30%; } }
+    @media only screen and (min-width: 768px) {
+      .hero--i {
+        top: 20%; } }
+    @media only screen and (min-width: 800px) {
+      .hero--i {
         top: 20%; } }
     @media only screen and (min-width: 850px) {
       .hero--i {
         width: 100%;
         padding: 2rem;
-        top: 25%; } }
+        top: 30%; } }
     @media only screen and (min-width: 992px) {
       .hero--i {
         width: 100%;
-        top: 25%; } }
+        top: 35%; } }
+    @media only screen and (min-width: 1024px) {
+      .hero--i {
+        top: 20%; } }
+    @media only screen and (min-width: 1030px) {
+      .hero--i {
+        top: 30%; } }
     @media only screen and (min-width: 1200px) {
       .hero--i {
         width: 100%;
         -webkit-transform: translate(-50%, -50%) scale(1);
                 transform: translate(-50%, -50%) scale(1);
-        top: 35%; } }
+        top: 40%; } }
+    @media only screen and (min-width: 1320px) {
+      .hero--i {
+        top: 45%; } }
+    @media only screen and (min-width: 1600px) {
+      .hero--i {
+        top: 15%; } }
     .hero--i-name {
       width: 100%;
       color: #b14c5a;
@@ -639,9 +675,18 @@ header {
       text-align: center;
       letter-spacing: 1px;
       margin-bottom: 0; }
+      @media only screen and (min-width: 320px) {
+        .hero--i-name {
+          font-size: 1rem; } }
       @media only screen and (min-width: 480px) {
         .hero--i-name {
           margin-top: 0 !important; } }
+      @media only screen and (min-width: 600px) {
+        .hero--i-name {
+          font-size: 1.7rem; } }
+      @media only screen and (min-width: 610px) {
+        .hero--i-name {
+          font-size: 1rem; } }
       @media only screen and (min-width: 690px) {
         .hero--i-name {
           font-size: 1.7rem;
@@ -832,13 +877,20 @@ header {
           box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   .card--about-content {
     position: absolute;
+    width: 100%;
+    text-align: center;
     top: 10%;
     left: 50%;
     color: white;
     font-weight: 300;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+    @media only screen and (min-width: 560px) {
+      .card--about-content {
+        width: auto;
+        font-size: 1.5rem; } }
     .card--about-content:after {
       content: ' ';
       position: absolute;
@@ -858,13 +910,27 @@ header {
 .card--textContent {
   width: 60%;
   height: 350px;
-  padding: 60px 20px 110px 20px;
   float: right;
+  padding: 1rem;
   -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  text-align: center; }
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  text-align: justify;
+  font-size: 0.695rem; }
+  @media only screen and (min-width: 320px) {
+    .card--textContent {
+      font-size: 0.795rem; } }
+  @media only screen and (min-width: 480px) {
+    .card--textContent {
+      font-size: 0.875rem; } }
+  @media only screen and (min-width: 560px) {
+    .card--textContent {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      padding: 60px 20px 110px 20px;
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px); } }
 
 .card--text {
   font-weight: 300;
@@ -876,7 +942,7 @@ header {
   .skill--title {
     position: relative;
     font-weight: 500;
-    font-size: 1.0652rem;
+    font-size: 1.1652rem;
     text-align: center;
     letter-spacing: 2px;
     color: #8C8C8C; }
@@ -893,10 +959,13 @@ header {
   .skill--blocks {
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem 1rem 0 1rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     overflow: hidden; }
+    @media only screen and (min-width: 560px) {
+      .skill--blocks {
+        padding: 2rem; } }
     .skill--blocks:after {
       content: '';
       display: block;
@@ -907,10 +976,13 @@ header {
         padding-top: 5rem; } }
   .skill--block {
     width: 100%;
-    padding: 0 5rem;
+    padding: 0 1rem;
     margin: 0 auto 5rem auto;
     text-align: center;
     float: none; }
+    @media only screen and (min-width: 560px) {
+      .skill--block {
+        padding: 0 5rem; } }
     @media only screen and (min-width: 850px) {
       .skill--block {
         width: 30%;
@@ -950,7 +1022,7 @@ header {
     font-weight: 300;
     padding-top: 10px;
     color: #6f6f6f;
-    text-align: center; }
+    text-align: justify; }
     @media only screen and (min-width: 850px) {
       .skill--description {
         max-width: 800px;
@@ -960,31 +1032,63 @@ header {
 
 .projects {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 1rem;
+  position: relative;
   background: #8d3d48;
   overflow-y: hidden; }
+  @media only screen and (min-width: 560px) {
+    .projects {
+      padding: 0 50px; } }
   .projects--container:after {
     content: '';
     display: block;
     visibility: hidden;
     clear: both; }
   .projects--block {
-    float: left;
-    width: 20%;
-    padding: 50px 10px;
-    margin: 0 1.875rem;
-    cursor: pointer; }
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    border-bottom: 1px solid #6a2d36; }
+    @media only screen and (min-width: 560px) {
+      .projects--block {
+        float: left;
+        width: 50%;
+        text-align: center;
+        padding: 1rem 0 2rem 0;
+        border-bottom: none; } }
+    @media only screen and (min-width: 850px) {
+      .projects--block {
+        width: 50%;
+        padding: 50px 10px; } }
+    @media only screen and (min-width: 992px) {
+      .projects--block {
+        width: 20%;
+        margin: 0px 15px;
+        text-align: center; } }
+    @media only screen and (min-width: 1200px) {
+      .projects--block {
+        margin: 0px 25px; } }
     .projects--block:hover {
       background-image: linear-gradient(120deg, #b14c5a, #b95d6a);
       -webkit-box-shadow: inset 0px 3px 10px -2px rgba(0, 0, 0, 0.3);
               box-shadow: inset 0px 3px 10px -2px rgba(0, 0, 0, 0.3); }
   .projects--title {
+    position: relative;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
     color: #FFF;
-    text-transform: capitalize; }
+    text-transform: uppercase; }
+    @media only screen and (min-width: 992px) {
+      .projects--title {
+        font-size: 0.805rem; } }
+    @media only screen and (min-width: 1200px) {
+      .projects--title {
+        font-size: 1rem; } }
     .projects--title:after {
+      display: none;
       background: white; }
   .projects--number {
     display: block;
@@ -999,10 +1103,13 @@ header {
   clear: both; }
 
 .showcase--github, .showcase--counter {
-  width: 50%;
+  width: 100%;
   position: relative;
   padding: 5rem;
   cursor: pointer; }
+  @media only screen and (min-width: 690px) {
+    .showcase--github, .showcase--counter {
+      width: 50%; } }
   .showcase--github-icon {
     display: block;
     margin: 0 auto;
@@ -1017,14 +1124,22 @@ header {
               transform: scale(1.2); }
 
 .showcase--text {
-  max-width: 50%;
-  margin: 0 auto;
+  max-width: 100%;
   font-size: 1.2rem;
   font-weight: 300;
   text-align: center;
   color: #6f6f6f;
   margin: 0 auto;
+  text-align: center;
   text-transform: capitalize; }
+  @media only screen and (min-width: 690px) {
+    .showcase--text {
+      font-size: 1rem;
+      max-width: 100%; } }
+  @media only screen and (min-width: 850px) {
+    .showcase--text {
+      font-size: 1.2rem;
+      max-width: 50%; } }
 
 .showcase--number {
   display: block;
@@ -1032,7 +1147,7 @@ header {
   font-weight: 700;
   text-align: center;
   color: #b14c5a;
-  font-size: 8rem; }
+  font-size: 7rem; }
 
 .showcase--present {
   display: block;
@@ -1074,6 +1189,10 @@ header {
   font-weight: 300;
   text-align: center;
   color: #6f6f6f;
+  font-size: 1rem;
   color: white;
   letter-spacing: 1px;
   margin: 0 auto 15px auto; }
+  @media only screen and (min-width: 480px) {
+    .footer--catchphrase {
+      font-size: 1.2rem; } }
