@@ -1,0 +1,1 @@
+import waypoint from "../../../../node_modules/waypoints/lib/noframework.waypoints.min";import get from "./selector";
