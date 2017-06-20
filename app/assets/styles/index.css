@@ -367,7 +367,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'lato', sans-serif;
   width: 100%; }
 
 *,
@@ -426,6 +426,9 @@ header {
     display: block;
     visibility: hidden;
     clear: both; }
+
+.paint {
+  background: #FAFAFA; }
 
 .border-bottom-isActive {
   border-bottom: none; }
@@ -892,7 +895,8 @@ header {
     margin: 0 auto;
     padding: 2rem;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    overflow: hidden; }
     .skill--blocks:after {
       content: '';
       display: block;
@@ -953,3 +957,87 @@ header {
         font-size: 0.975rem;
         padding-top: 10px;
         text-align: left; } }
+
+.projects {
+  width: 100%;
+  padding: 0 50px;
+  background: #8d3d48;
+  overflow-y: hidden; }
+  .projects--container:after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both; }
+  .projects--block {
+    float: left;
+    width: 20%;
+    padding: 50px 10px;
+    margin: 0 1.875rem;
+    cursor: pointer; }
+    .projects--block:hover {
+      background-image: linear-gradient(120deg, #b14c5a, #b95d6a);
+      -webkit-box-shadow: inset 0px 3px 10px -2px rgba(0, 0, 0, 0.3);
+              box-shadow: inset 0px 3px 10px -2px rgba(0, 0, 0, 0.3); }
+  .projects--title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FFF;
+    text-transform: capitalize; }
+    .projects--title:after {
+      background: white; }
+  .projects--number {
+    display: block;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: white; }
+
+.showcase:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both; }
+
+.showcase--github, .showcase--counter {
+  width: 50%;
+  position: relative;
+  padding: 5rem;
+  cursor: pointer; }
+  .showcase--github-icon {
+    display: block;
+    margin: 0 auto;
+    padding: 4rem 0 5rem 0;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; }
+    .showcase--github-icon:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+
+.showcase--text {
+  max-width: 50%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #6f6f6f;
+  margin: 0 auto;
+  text-transform: capitalize; }
+
+.showcase--number {
+  display: block;
+  padding: 3rem 0;
+  font-weight: 700;
+  text-align: center;
+  color: #b14c5a;
+  font-size: 8rem; }
+
+.showcase--present {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
