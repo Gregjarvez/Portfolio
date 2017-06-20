@@ -1,3 +1,39 @@
+.border-bottom-isActive {
+  border-bottom: none; }
+  @media only screen and (min-width: 850px) {
+    .border-bottom-isActive {
+      border-bottom: 4px solid transparent;
+      -webkit-animation: extend .7s ease-in-out forwards;
+              animation: extend .7s ease-in-out forwards; } }
+
+@-webkit-keyframes extend {
+  0% {
+    border-bottom: 1px solid transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border-bottom: 3px solid #b14c5a; }
+  100% {
+    border-bottom: 4px solid #b14c5a;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes extend {
+  0% {
+    border-bottom: 1px solid transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border-bottom: 3px solid #b14c5a; }
+  100% {
+    border-bottom: 4px solid #b14c5a;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
 /*! SCSS version of normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -438,12 +474,6 @@ header {
 .paint {
   background: #FAFAFA; }
 
-.border-bottom-isActive {
-  border-bottom: none; }
-  @media only screen and (min-width: 850px) {
-    .border-bottom-isActive {
-      border-bottom: 4px solid #b14c5a; } }
-
 .nav {
   display: block;
   position: absolute;
@@ -454,9 +484,16 @@ header {
   -webkit-box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
           box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
   background: #2c3e50;
-  z-index: 5;
-  -webkit-transition: left 0.6s cubic-bezier(0.25, 0.1, 0.34, 1.45);
-  transition: left 0.6s cubic-bezier(0.25, 0.1, 0.34, 1.45); }
+  z-index: 7;
+  -webkit-transition: all 0.6s cubic-bezier(0.25, 0.1, 0.34, 1.45);
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.34, 1.45); }
+  .nav.transparent {
+    background: rgba(255, 255, 255, 0.6); }
+  .nav.show {
+    opacity: 0; }
+    .nav.show:hover {
+      opacity: 1;
+      visibility: visible; }
   .nav.isVisible {
     left: 0; }
   @media only screen and (min-width: 850px) {
@@ -470,7 +507,7 @@ header {
               box-sizing: border-box;
       -webkit-box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
               box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
-      z-index: 5; } }
+      z-index: 7; } }
   .nav--mobile-menu {
     display: block;
     position: absolute;
@@ -582,6 +619,7 @@ header {
       visibility: hidden;
       clear: both; }
     .nav--main-link {
+      position: relative;
       display: block;
       padding: 0.875rem;
       width: 100%;

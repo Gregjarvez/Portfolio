@@ -1,1 +1,1 @@
-.border-bottom-isActive{  border-bottom: none;    @include after800px{    border-bottom: 4px solid $c-main;  }}
+.border-bottom-isActive{  border-bottom: none;    @include after800px{    border-bottom: 4px solid transparent;    animation: extend .7s ease-in-out forwards;  }}@keyframes extend {  0%{    border-bottom: 1px solid transparent;    transform: scale(1);  }    50% {    transform: scale(1.1);    border-bottom: 3px solid $c-main;  }    100%{    border-bottom: 4px solid $c-main;    transform: scale(1);  }} 
