@@ -1041,3 +1041,39 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
+.footer--bg {
+  background: #b14c5a; }
+
+.footer--name {
+  display: block;
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .footer--name:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: white; }
+
+.footer--catchphrase {
+  max-width: 400px;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
+  color: #6f6f6f;
+  color: white;
+  letter-spacing: 1px;
+  margin: 0 auto 15px auto; }
