@@ -464,6 +464,7 @@ header {
       display: block;
       width: 100%;
       position: fixed;
+      left: 0;
       background-color: #FFFFFF;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -587,6 +588,8 @@ header {
       float: none;
       margin: 0 auto;
       text-align: center; }
+      .nav--main-link:last-child {
+        margin-bottom: 1rem; }
       @media only screen and (min-width: 850px) {
         .nav--main-link {
           float: left;
@@ -595,6 +598,8 @@ header {
           padding: 1.875rem 0;
           -webkit-transition: border .4s ease;
           transition: border .4s ease; }
+          .nav--main-link:last-child {
+            margin-bottom: 0; }
           .nav--main-link::after {
             content: '';
             display: block;
@@ -608,7 +613,7 @@ header {
         -webkit-font-smoothing: antialiased; }
         @media only screen and (min-width: 850px) {
           .nav--main-link a {
-            -webkit-font-smoothing: none;
+            -webkit-font-smoothing: initial;
             color: #b14c5a; } }
 
 .hero {
