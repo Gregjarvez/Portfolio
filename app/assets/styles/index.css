@@ -445,15 +445,20 @@ header {
       border-bottom: 4px solid #b14c5a; } }
 
 .nav {
-  display: none;
-  visibility: hidden;
-  position: fixed;
+  display: block;
+  position: absolute;
+  left: 100%;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
           box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
-  z-index: 5; }
+  background: #2c3e50;
+  z-index: 5;
+  -webkit-transition: left 0.6s cubic-bezier(0.25, 0.1, 0.34, 1.45);
+  transition: left 0.6s cubic-bezier(0.25, 0.1, 0.34, 1.45); }
+  .nav.isVisible {
+    left: 0; }
   @media only screen and (min-width: 850px) {
     .nav {
       display: block;
@@ -469,10 +474,26 @@ header {
     display: block;
     position: absolute;
     padding: 1.1rem;
-    top: 30px;
+    top: 1%;
     right: 40px;
     cursor: pointer;
-    z-index: 6; }
+    z-index: 6;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+    @media only screen and (min-width: 320px) {
+      .nav--mobile-menu {
+        top: 1%; } }
+    @media only screen and (min-width: 480px) {
+      .nav--mobile-menu {
+        top: 3%; } }
+    @media only screen and (min-width: 560px) {
+      .nav--mobile-menu {
+        -webkit-transform: scale(1);
+                transform: scale(1); } }
+    @media only screen and (min-width: 480px) {
+      .nav--mobile-menu {
+        -webkit-transform: scale(1);
+                transform: scale(1); } }
     .nav--mobile-menu.isopened::after {
       -webkit-transform: translateY(-3px) rotate(45deg) scaleX(1.5);
               transform: translateY(-3px) rotate(45deg) scaleX(1.5);
@@ -495,11 +516,11 @@ header {
       margin: 0;
       position: absolute;
       left: 0;
-      height: 5px;
       width: 25px;
+      height: 5px;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
-      background: #b14c5a;
+      background: white;
       top: 7px;
       -webkit-transform: scaleX(1.2);
               transform: scaleX(1.2);
@@ -512,11 +533,11 @@ header {
       margin: 0;
       position: absolute;
       left: 0;
-      height: 5px;
       width: 25px;
+      height: 5px;
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
-      background: #b14c5a;
+      background: white;
       bottom: 7px;
       -webkit-transform: scaleX(1.2);
               transform: scaleX(1.2);
@@ -531,11 +552,11 @@ header {
       width: 25px;
       height: 5px;
       margin: 0;
-      -webkit-transform: translateY(-3px) scaleX(1.2);
-              transform: translateY(-3px) scaleX(1.2);
+      -webkit-transform: translateY(-2.5px) scaleX(1.2);
+              transform: translateY(-2.5px) scaleX(1.2);
       -webkit-transform-origin: 0 0;
               transform-origin: 0 0;
-      background: #b14c5a;
+      background: white;
       -webkit-transition: opacity .5s ease-in-out;
       transition: opacity .5s ease-in-out; }
     @media only screen and (min-width: 850px) {
@@ -561,11 +582,10 @@ header {
       clear: both; }
     .nav--main-link {
       display: block;
-      padding: 1rem;
+      padding: 0.875rem;
       width: 100%;
       float: none;
       margin: 0 auto;
-      padding: 1rem 0;
       text-align: center; }
       @media only screen and (min-width: 850px) {
         .nav--main-link {
@@ -581,10 +601,15 @@ header {
             visibility: hidden;
             clear: both; } }
       .nav--main-link a {
-        color: #b14c5a;
+        color: white;
         font-weight: 700;
         font-size: 0.875rem;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        -webkit-font-smoothing: antialiased; }
+        @media only screen and (min-width: 850px) {
+          .nav--main-link a {
+            -webkit-font-smoothing: none;
+            color: #b14c5a; } }
 
 .hero {
   width: 100%; }
@@ -701,7 +726,8 @@ header {
 
 .btn--default {
   padding: .4rem  1.75rem;
-  border: 1px solid #b14c5a; }
+  border: 1px solid white;
+  border-radius: 25px; }
   @media only screen and (min-width: 480px) {
     .btn--default {
       margin: 0;
@@ -713,6 +739,7 @@ header {
       border-radius: 25px; } }
   @media only screen and (min-width: 850px) {
     .btn--default {
+      border: 1px solid #b14c5a;
       margin-top: auto;
       margin-bottom: auto;
       padding: 0.5375rem  3.75rem;

@@ -1,1 +1,1 @@
-.btn {    &--default {    @include btn-default;  }    &--contact{        border: 0;    box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);    @include transition;  }}
+.btn {    &--default {    @include btn-default;  }    &--contact{    border: 0;    box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);    @include transition;  }}
