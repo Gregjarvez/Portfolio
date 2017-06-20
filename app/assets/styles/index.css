@@ -394,9 +394,6 @@ header {
   margin: 0;
   padding: 0; }
 
-#home .section-padding {
-  padding: 0rem 0 2.38rem 0; }
-
 .wrapper {
   max-width: 1200px;
   padding: 0;
@@ -406,6 +403,11 @@ header {
 .page-section {
   background: #FAFAFA;
   padding: 3.38rem 0 3.38rem 0; }
+  .page-section.nopadding-top {
+    padding: 0 0 4.38rem 0; }
+  @media only screen and (min-width: 480px) {
+    .page-section {
+      padding: 4.38rem 0 4.38rem 0; } }
   @media only screen and (min-width: 560px) {
     .page-section {
       padding: 4.38rem 0 4.38rem 0; } }
@@ -443,10 +445,10 @@ header {
       border-bottom: 4px solid #b14c5a; } }
 
 .nav {
-  display: block;
-  width: 100%;
+  display: none;
+  visibility: hidden;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.51);
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
@@ -558,7 +560,7 @@ header {
       visibility: hidden;
       clear: both; }
     .nav--main-link {
-      display: none;
+      display: block;
       padding: 1rem;
       width: 100%;
       float: none;
@@ -587,166 +589,78 @@ header {
 .hero {
   width: 100%; }
   .hero--bg {
+    position: relative;
     width: 100%;
     background-color: #2c3e50; }
   .hero--i {
     width: 100%;
     position: absolute;
-    top: 12%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.7);
             transform: translate(-50%, -50%) scale(0.7);
     z-index: 2; }
-    @media only screen and (min-width: 320px) {
-      .hero--i {
-        width: 100%;
-        position: absolute;
-        top: 21%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%) scale(0.8);
-                transform: translate(-50%, -50%) scale(0.8);
-        z-index: 2; } }
-    @media only screen and (min-width: 360px) {
-      .hero--i {
-        top: 20%; } }
-    @media only screen and (min-width: 480px) {
-      .hero--i {
-        width: 600px;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%) scale(0.8);
-                transform: translate(-50%, -50%) scale(0.8);
-        z-index: 2; } }
-    @media only screen and (min-width: 600px) {
-      .hero--i {
-        top: 20%; } }
-    @media only screen and (min-width: 640px) {
-      .hero--i {
-        top: 60%; } }
-    @media only screen and (min-width: 645px) {
-      .hero--i {
-        top: 20%; } }
-    @media only screen and (min-width: 690px) {
-      .hero--i {
-        width: 100%;
-        padding: 2rem;
-        -webkit-transform: translate(-50%, -50%) scale(1);
-                transform: translate(-50%, -50%) scale(1);
-        top: 30%; } }
-    @media only screen and (min-width: 768px) {
-      .hero--i {
-        top: 20%; } }
-    @media only screen and (min-width: 800px) {
-      .hero--i {
-        top: 20%; } }
-    @media only screen and (min-width: 850px) {
-      .hero--i {
-        width: 100%;
-        padding: 2rem;
-        top: 30%; } }
-    @media only screen and (min-width: 992px) {
-      .hero--i {
-        width: 100%;
-        top: 35%; } }
-    @media only screen and (min-width: 1024px) {
-      .hero--i {
-        top: 20%; } }
-    @media only screen and (min-width: 1030px) {
-      .hero--i {
-        top: 30%; } }
-    @media only screen and (min-width: 1200px) {
-      .hero--i {
-        width: 100%;
-        -webkit-transform: translate(-50%, -50%) scale(1);
-                transform: translate(-50%, -50%) scale(1);
-        top: 40%; } }
-    @media only screen and (min-width: 1320px) {
-      .hero--i {
-        top: 45%; } }
-    @media only screen and (min-width: 1600px) {
-      .hero--i {
-        top: 15%; } }
     .hero--i-name {
       width: 100%;
       color: #b14c5a;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 500;
       text-align: center;
       letter-spacing: 1px;
       margin-bottom: 0; }
-      @media only screen and (min-width: 320px) {
+      @media only screen and (min-width: 560px) {
         .hero--i-name {
-          font-size: 1rem; } }
-      @media only screen and (min-width: 480px) {
-        .hero--i-name {
-          margin-top: 0 !important; } }
-      @media only screen and (min-width: 600px) {
-        .hero--i-name {
-          font-size: 1.7rem; } }
-      @media only screen and (min-width: 610px) {
-        .hero--i-name {
-          font-size: 1rem; } }
-      @media only screen and (min-width: 690px) {
-        .hero--i-name {
-          font-size: 1.7rem;
-          letter-spacing: 3px;
-          font-weight: 500; } }
-      @media only screen and (min-width: 850px) {
-        .hero--i-name {
-          font-size: 1.7rem;
-          letter-spacing: 3px;
-          font-weight: 500; } }
+          font-size: 1.8rem; } }
   .hero--content {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    margin-top: 5px;
     margin-bottom: 1px; }
+    @media only screen and (min-width: 320px) {
+      .hero--content {
+        margin-top: 1rem;
+        margin-bottom: 2rem; } }
     @media only screen and (min-width: 480px) {
       .hero--content {
-        margin-top: 1.9rem;
-        margin-bottom: 1px; } }
-    @media only screen and (min-width: 690px) {
-      .hero--content {
-        margin-top: 1.7rem;
-        margin-bottom: 1px; } }
-    @media only screen and (min-width: 850px) {
-      .hero--content {
-        margin-top: 2.9rem; } }
+        max-width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem; } }
   .hero--catchBlock {
     width: 100%;
     padding: .3rem;
     color: #FFFFFF;
     text-align: center;
-    font-size: .775rem;
+    font-size: .875rem;
     font-weight: 300;
     line-height: 1.4;
     margin-top: 0;
     text-transform: uppercase; }
     @media only screen and (min-width: 480px) {
       .hero--catchBlock {
+        max-width: 100%;
         padding: 0.1rem;
-        font-size: .875rem;
+        font-size: 0.975rem;
         line-height: 1.6;
-        letter-spacing: 2px;
-        margin-top: -20px; } }
+        text-align: center;
+        letter-spacing: 2px; } }
     @media only screen and (min-width: 690px) {
       .hero--catchBlock {
-        max-width: 600px;
+        max-width: 100%;
         margin: 0 auto;
-        font-size: 0.875rem;
+        font-size: 1.2rem;
         line-height: 1.7; } }
     @media only screen and (min-width: 850px) {
       .hero--catchBlock {
-        max-width: 700px;
-        margin: 0px auto;
-        font-size: 1rem;
+        max-width: 100%;
+        margin: 0  auto 1rem auto;
+        font-size: 1.3rem;
         line-height: 1.7; } }
     @media only screen and (min-width: 992px) {
       .hero--catchBlock {
-        max-width: 700px;
+        max-width: 900px;
         margin: 0px auto;
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1.7; } }
     .hero--catchBlock strong {
       font-weight: 700;
