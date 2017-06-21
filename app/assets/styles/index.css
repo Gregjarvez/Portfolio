@@ -863,8 +863,17 @@ header {
   z-index: 4;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  -webkit-transform: translateX(-35px) scale(1.1);
+          transform: translateX(-35px) scale(1.1);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
   -webkit-box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 5px 0px 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .card--about.removetranslate {
+    -webkit-transform: translateX(0px) scale(1);
+            transform: translateX(0px) scale(1); }
   .card--about-content {
     position: absolute;
     width: 100%;
@@ -904,10 +913,17 @@ header {
   padding: 1rem;
   -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.6);
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+  -webkit-transform: translateY(40px) translateX(30px);
+          transform: translateY(40px) translateX(30px);
   text-align: justify;
   font-size: 0.695rem; }
+  .card--textContent.removetranslate {
+    -webkit-transform: translateY(40px) translateX(0);
+            transform: translateY(40px) translateX(0); }
   @media only screen and (min-width: 320px) {
     .card--textContent {
       font-size: 0.795rem; } }
@@ -929,6 +945,14 @@ header {
 .skill {
   width: 100%;
   overflow: hidden; }
+  .skill--svg {
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: translateX(60px) scale(1.5);
+            transform: translateX(60px) scale(1.5); }
+    .skill--svg.toposition {
+      -webkit-transform: translateX(0px) scale(1);
+              transform: translateX(0px) scale(1); }
   .skill--title {
     position: relative;
     font-weight: 500;
@@ -1108,6 +1132,7 @@ header {
     border-radius: 15%;
     -webkit-box-shadow: 0 0 0 0 rgba(177, 76, 90, 0.5);
             box-shadow: 0 0 0 0 rgba(177, 76, 90, 0.5);
+    -webkit-backface-visibility: revert;
     -webkit-animation: pulse 1.5s infinite;
     animation: pulse 1.5s infinite;
     -webkit-transform: scale(1);
@@ -1143,7 +1168,9 @@ header {
   font-weight: 700;
   text-align: center;
   color: #b14c5a;
-  font-size: 7rem; }
+  font-size: 7rem;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
 
 .showcase--present {
   display: block;

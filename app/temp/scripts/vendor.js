@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 121);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */
+/******/ ({
+
+/***/ 119:
 /***/ (function(module, exports) {
 
 /* -----------------------------------------------
@@ -1614,15 +1614,14 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 };
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
+
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _particles = __webpack_require__(1);
+var _particles = __webpack_require__(119);
 
 var _particles2 = _interopRequireDefault(_particles);
 
@@ -1632,4 +1631,5 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 particlesJS.load('particles--bg', '../../assets/particles.json', function () {});
 
 /***/ })
-/******/ ]);
+
+/******/ });
