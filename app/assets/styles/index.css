@@ -804,7 +804,6 @@ header {
       color: white; }
   .btn--contact {
     border: 0;
-    padding: 1rem;
     -webkit-box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
             box-shadow: 0 10px 6px -7px rgba(0, 0, 0, 0.59);
     -webkit-transition: all .4s ease-in-out;
@@ -1185,13 +1184,12 @@ header {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; }
   .showcase--number.animate {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6); }
 
 .showcase--notify {
   position: absolute;
-  padding: .4rem;
-  width: 150px;
+  padding: .7rem 2rem;
   background: rgba(0, 0, 0, 0.9);
   color: white;
   top: -3%;
