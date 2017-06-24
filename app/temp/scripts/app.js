@@ -7843,6 +7843,7 @@ var Register = function () {
     this.classname = "animate";
     this.count = 0;
     this.init();
+    this.ref;
     this.events();
     this.syncData();
   }
@@ -7916,7 +7917,7 @@ var Register = function () {
         var counting = new _countup2.default(that.span, that.count, currentNumber, 0, 3);
         counting.start();
         _this.count = currentNumber;
-        _this.ref = _this.count + 10;
+        _this.ref = currentNumber + 10;
       });
     }
   }, {
@@ -7932,7 +7933,6 @@ var Register = function () {
         var counting = new _countup2.default(that.span, that.count, data, 0, 10);
         counting.start();
         _this2.count = data;
-        _this2.ref = _this2.count + 10;
       });
     }
   }, {
@@ -7987,8 +7987,8 @@ var Register = function () {
     value: function notify() {
       var _this6 = this;
 
-      var ref = this.ref;
-      if (this.count === ref) {
+      console.log(this.ref, this.count);
+      if (this.count === this.ref) {
         this.nofication.classList.add("movein");
         setTimeout(function () {
           return _this6.nofication.classList.remove("movein");
@@ -7996,15 +7996,6 @@ var Register = function () {
         this.mutateRef();
         this.changeText();
       }
-    }
-  }, {
-    key: "ref",
-    value: function ref() {
-      var that = this;
-      var ref = firebase.database().ref("register/counter");
-      ref.on("value", function (data) {
-        return that.syncNumber(Promise.resolve(data.val()));
-      });
     }
   }, {
     key: "addToDataBase",
@@ -8139,7 +8130,7 @@ window.onload = function () {
     toposition: "toposition",
     svgOffset: "30%",
     svg: ".skill--svg",
-    countObj: [{ countNode: ".count", stop: 21, delay: 200, speed: 50 }, { countNode: ".count--2", stop: 32, delay: 1050, speed: 50 }, { countNode: ".count--3", stop: 2, delay: 1900, speed: 50 }]
+    countObj: [{ countNode: ".count", stop: 41, delay: 200, speed: 50 }, { countNode: ".count--2", stop: 38, delay: 1050, speed: 50 }, { countNode: ".count--3", stop: 1, delay: 1900, speed: 50 }]
   };
 
   new _nav2.default();
