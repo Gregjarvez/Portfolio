@@ -7562,7 +7562,7 @@ var Counter = function () {
             clearInterval(startCounter);
           }
           count++;
-        }, promise.speed);
+        }, 2000);
       }, promise.delay);
     }
   }, {
@@ -7583,14 +7583,14 @@ var Counter = function () {
       var that = this;
       return new Waypoint({
         element: that.id,
-        handler: function handler(direction) {
+        handler: function handler() {
           if (!that.hasRun) {
             that.setCounter();
             that.test();
             that.hasRun = true;
           }
         },
-        offset: "35%"
+        offset: "40%"
       });
     }
   }]);
