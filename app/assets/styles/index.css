@@ -489,7 +489,7 @@ button,
 
 .justified {
   text-align: justify;
-  text-rendering: geometricPrecision; }
+  text-rendering: optimizeLegibility; }
 
 .nav {
   display: block;
