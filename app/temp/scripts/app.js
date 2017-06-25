@@ -7555,7 +7555,6 @@ var Counter = function () {
           count = _ref[0],
           stop = _ref[1];
 
-      var that = this;
       setTimeout(function () {
         var startCounter = setInterval(function () {
           (0, _selector2.default)(promise.countNode).textContent = count;
@@ -7585,7 +7584,7 @@ var Counter = function () {
       return new Waypoint({
         element: that.id,
         handler: function handler(direction) {
-          if (direction === "down" && !that.hasRun) {
+          if (!that.hasRun) {
             that.setCounter();
             that.test();
             that.hasRun = true;
@@ -7838,6 +7837,7 @@ var Register = function () {
     this.registerContent = (0, _selector2.default)(".showcase--button");
     this.nofication = (0, _selector2.default)(".showcase--notify");
     this.span = (0, _selector2.default)(".showcase--number");
+    this.portfolio = (0, _selector2.default)(".projects");
     this.notifIndex = 0;
     this.notifStatements = ["Bravo!!!!", "keep Going", "Getting there", "Marvelous!!!", "okay that's enough:)"];
     this.classname = "animate";
