@@ -674,6 +674,9 @@ button,
 
 .hero {
   width: 100%; }
+  .hero wrapper {
+    width: 100%;
+    margin: 0 0; }
   .hero--bg {
     position: relative;
     width: 100%;
@@ -692,7 +695,8 @@ button,
     z-index: 2; }
     @media only screen and (min-width: 560px) {
       .hero--i {
-        top: 50%; } }
+        top: 50%;
+        width: 100%; } }
     .hero--i-name {
       width: 100%;
       color: #b14c5a;
@@ -725,9 +729,9 @@ button,
     padding: .3rem;
     color: #FFFFFF;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem !important;
     font-weight: 300;
-    line-height: 1.4;
+    line-height: 1.7;
     margin-top: 0;
     text-transform: uppercase; }
     @media only screen and (min-width: 320px) {
@@ -746,21 +750,21 @@ button,
         letter-spacing: 2px; } }
     @media only screen and (min-width: 690px) {
       .hero--catchBlock {
-        max-width: 100%;
+        min-width: 600px;
         margin: 0 auto;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.7; } }
     @media only screen and (min-width: 850px) {
       .hero--catchBlock {
-        max-width: 100%;
+        max-width: 900px;
         margin: 0  auto 1rem auto;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         line-height: 1.7; } }
     @media only screen and (min-width: 992px) {
       .hero--catchBlock {
         max-width: 900px;
         margin: 0px auto;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         line-height: 1.7; } }
     .hero--catchBlock strong {
       font-weight: 700;
@@ -787,7 +791,7 @@ button,
         top: 110%; } }
     .hero--contact a {
       color: #FFFFFF;
-      font-size: .675rem;
+      font-size: 0.875rem;
       letter-spacing: 1px; }
       @media only screen and (min-width: 480px) {
         .hero--contact a {
@@ -839,7 +843,7 @@ button,
 
 .social {
   max-width: 400px;
-  padding: 0.7rem 0 .7rem 0;
+  padding: 1rem 0 .7rem 0;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,19 +871,19 @@ button,
     clear: both; }
   .social--icon {
     color: #efdadd;
-    font-size: .875rem;
+    font-size: 1.8rem;
     margin-right: 15px;
     padding: auto auto;
     cursor: pointer; }
     @media only screen and (min-width: 480px) {
       .social--icon {
         color: #efdadd;
-        font-size: 1rem;
+        font-size: 1.8rem;
         margin-right: 15px;
         cursor: pointer; } }
     @media only screen and (min-width: 850px) {
       .social--icon {
-        font-size: 1.2rem; } }
+        font-size: 2rem; } }
     .social--icon:hover {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
