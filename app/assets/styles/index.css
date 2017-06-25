@@ -404,7 +404,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: 'lato', sans-serif;
-  width: 100%; }
+  width: 100%;
+  text-rendering: geometricPrecision; }
 
 *,
 *::after,
@@ -485,6 +486,10 @@ button,
 
 .l-margin-right {
   margin-right: .4rem; }
+
+.justified {
+  text-align: justify;
+  text-rendering: geometricPrecision; }
 
 .nav {
   display: block;
@@ -758,7 +763,7 @@ button,
       .hero--catchBlock {
         max-width: 900px;
         margin: 0  auto 1rem auto;
-        font-size: 1.6rem;
+        font-size: 2rem;
         line-height: 1.7; } }
     @media only screen and (min-width: 992px) {
       .hero--catchBlock {
