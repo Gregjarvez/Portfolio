@@ -1628,7 +1628,7 @@ var _particles2 = _interopRequireDefault(_particles);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles--bg', '../../Portfolio/assets/particles.json', function () {});
+particlesJS.load('particles--bg', '../../assets/particles.json', function () {});
 
 /***/ })
 
