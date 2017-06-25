@@ -7987,7 +7987,6 @@ var Register = function () {
     value: function notify() {
       var _this6 = this;
 
-      console.log(this.ref, this.count);
       if (this.count === this.ref) {
         this.nofication.classList.add("movein");
         setTimeout(function () {
