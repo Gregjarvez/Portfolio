@@ -7562,7 +7562,7 @@ var Counter = function () {
             clearInterval(startCounter);
           }
           count++;
-        }, 2000);
+        }, 100);
       }, promise.delay);
     }
   }, {
