@@ -1,2 +1,2 @@
 # Portfolio
-Utilises css, html and css javscript from ground up
+Utilises css, html5 and css javascript from ground up
