@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 149);
+/******/ 	return __webpack_require__(__webpack_require__.s = 175);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 147:
+/***/ 155:
 /***/ (function(module, exports) {
 
 /* -----------------------------------------------
@@ -1615,13 +1615,13 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
 /***/ }),
 
-/***/ 149:
+/***/ 175:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _particles = __webpack_require__(147);
+var _particles = __webpack_require__(155);
 
 var _particles2 = _interopRequireDefault(_particles);
 
