@@ -8607,10 +8607,10 @@ var Navigation = function () {
   }, {
     key: "removeborder",
     value: function removeborder(element) {
-      var that = this;
+      var context = this;
       this.navlinks.forEach(function (el) {
-        element.classList.add(that.dom.border);
-        if (element !== el) el.classList.remove(that.dom.border);
+        element.classList.add(context.dom.border);
+        if (element !== el) el.classList.remove(context.dom.border);
       });
     }
   }, {
