@@ -8383,7 +8383,7 @@ var Counter = function () {
     this.index = 0;
     this.hasRun = false;
     this.elements = [];
-    this.id = (0, _selector2.default)("#portfolio");
+    this.id = (0, _selector2.default)("#counter");
     this.setWaypoint();
   }
 
